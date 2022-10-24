@@ -14,7 +14,8 @@ function App() {
       amount: 94.12,
       date: new Date(2020, 7, 14),
     },
-    // { id: e3, title: "Book Purchase", amount: 20, date: new Date(2022, 2, 21) },
+    { //id: e3,
+       title: "Book Purchase", amount: 20, date: new Date(2022, 2, 21) },
   ];
   return (
     <div>
@@ -30,7 +31,7 @@ function App() {
         amount={expenses[1].amount}
         date={expenses[1].date}
       ></ExpenseItem>
-      
+
       <ExpenseItem
         title={expenses[2].title}
         amount={expenses[2].amount}
