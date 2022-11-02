@@ -1,11 +1,11 @@
-import Card from "./Card";
+import Card from './Card';
 import ExpenseItem from "./ExpenseItem";
 import "./NewExpenseItem.css";
 
 
 function NewExpenseItem(props) {
   return (
-    <Card className="expenses">
+    <Card className='expenses'>
       <ExpenseItem
         title={props.items[0].title}
         amount={props.items[0].amount}
