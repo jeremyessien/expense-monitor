@@ -12,9 +12,14 @@ function App() {
     { title: "Book purchase", amount: 20, date: new Date(2022, 2, 21) },
   ];
 
+  function addExpenseHandler(expense) {
+    console.log("In App.js");
+    console.log(expense);
+  }
+
   return (
     <div>
-      <NewExpense/>
+      <NewExpense onAddExpense = {addExpenseHandler} />
       <NewExpenseItem items={expenses} />
     </div>
   );
